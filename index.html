@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>湘西民族文化园</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+   	<script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<img src="images/logo.png" alt="" class="logo"/>
+		<a class="iconfont menu" id="btn" href="javascript:;">&#xe696;</a>
+	</div>
+	<!-- end header -->
+    <!-- 下拉菜单 -->
+    <div class="nav_wrap" id="nav_wrap" style="display:none;">
+        <ul class="nav">
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe696;</i>
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe61c;</i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe68c;</i>
+                    <span>景区概况</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe6b8;</i>
+                    <span>博物馆与非遗馆</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe604;</i>
+                    <span>园区景点</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe685;</i>
+                    <span>景区资讯</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe63e;</i>
+                    <span>旅游攻略</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe613;</i>
+                    <span>湘西人文</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe6be;</i>
+                    <span>逛园区</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont">&#xe61b;</i>
+                    <span>联系我们</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    end 下拉菜单
+
+    <!-- content -->
+    <div class="content">
+        <!--轮播图 -->
+        <div class="am-slider am-slider-a1 show_pic" data-am-slider='{"directionNav":false}' data-am-widget="slider">
+            <ul class="am-slides">
+                <li>
+                    <img src="images/01.png" />
+                </li>
+                <li>
+                    <img src="images/02.png" />
+                </li>
+                <li>
+                    <img src="images/03.png" />
+                </li>
+                <li>
+                    <img src="images/04.png" />
+                </li>
+            </ul>
+        </div>
+        <!-- end 轮播图-->
+        <!-- 水平导航 -->
+        <ul class="bar clear">
+            <li>
+                <a href="#">
+                    <img src="images/bar01.png" alt=""/>
+                    <span>景区概况</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/bar02.png" alt=""/>
+                    <span>博物馆与非遗馆</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/bar03.png" alt=""/>
+                    <span>园区景点</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/bar04.png" alt=""/>
+                    <span>景区资讯</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/bar05.png" alt=""/>
+                    <span>旅游攻略</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/bar06.png" alt=""/>
+                    <span>湘西人文</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/bar07.png" alt=""/>
+                    <span>逛园区</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/bar08.png" alt=""/>
+                    <span>联系我们</span>
+                </a>
+            </li>
+        </ul>
+        <!-- end 水平导航 -->
+        <!-- 博物馆与非遗馆 -->
+        <div class="museum">
+            <p class="museum_tit clear">
+                <span>博物馆与非遗馆</span>
+                <span>
+                    <a href="#">更多></a>
+                </span>
+            </p>
+            <ul class="museum_list clear">
+                <li>
+                    <a class="museum_link" href="#">
+                        <img src="images/museum01.png" alt="" class="museum_pic"/>
+                        <span class="museum_intro">湘西民族博物馆展厅——古韵湘西</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="museum_link" href="#">
+                        <img src="images/museum02.png" alt="" class="museum_pic"/>
+                        <span class="museum_intro">湘西民族博物馆展厅——土家古风</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="museum_link" href="#">
+                        <img src="images/museum03.png" alt="" class="museum_pic"/>
+                        <span class="museum_intro">湘西民族博物馆展厅——成就湘西</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="museum_link" href="#">
+                        <img src="images/museum04.png" alt="" class="museum_pic"/>
+                        <span class="museum_intro">湘西民族博物馆展厅——苗乡原韵</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end 博物馆与非遗馆 -->
+
+        <!-- 园区景点 -->
+        <div class="scene">
+            <p class="scene_tit clear">
+                <span>园区景点</span>
+                <span>
+                    <a href="#">更多></a>
+                </span>
+            </p>
+            <div class="am-slider am-slider-default tre_pics" data-am-slider='{"animation":"slide","slideshow":false}' data-am-widget="slider">
+                <ul class="am-slides">
+                    <li>
+                        <img src="images/scene01.png" />
+                        <div class="am-slider-desc">
+                            湘西民族文化园——博物馆
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/scene02.png" />
+                        <div class="am-slider-desc">
+                            湘西民族文化园——博物馆
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/scene03.png" />
+                        <div class="am-slider-desc">
+                            湘西民族文化园——博物馆
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/scene04.png" />
+                        <div class="am-slider-desc">
+                            湘西民族文化园——博物馆
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/scene05.png" />
+                        <div class="am-slider-desc">
+                            湘西民族文化园——博物馆
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end 园区景点 -->
+
+        <!-- 景区资讯 -->
+        <div class="news">
+            <p class="news_tit clear">
+                <span>景区资讯</span>
+                <span>
+                    <a href="#">更多></a>
+                </span>
+            </p>
+            <ul class="news_list">
+                <li>
+                    <a href="#" class="news_link clear">
+                        <img src="images/news01.png" alt="" class="news_pic"/>
+                        <div class="news_right">
+                            <p class="news_title">湘西民族文化园湘西民族文化园</p>
+                            <p class="news_txt">苗族民间的传统节日较多，有苗年、四月八、龙舟节、吃新节、赶秋节等，其中以过苗年最为隆......</p>
+                            <p class="news_date">2018-11-27</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="news_link clear">
+                        <img src="images/news02.png" alt="" class="news_pic"/>
+                        <div class="news_right">
+                            <p class="news_title">湘西民族文化园湘西民族文化园</p>
+                            <p class="news_txt">苗族民间的传统节日较多，有苗年、四月八、龙舟节、吃新节、赶秋节等，其中以过苗年最为隆......</p>
+                            <p class="news_date">2018-11-27</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="news_link clear">
+                        <img src="images/news03.png" alt="" class="news_pic"/>
+                        <div class="news_right">
+                            <p class="news_title">湘西民族文化园湘西民族文化园</p>
+                            <p class="news_txt">苗族民间的传统节日较多，有苗年、四月八、龙舟节、吃新节、赶秋节等，其中以过苗年最为隆......</p>
+                            <p class="news_date">2018-11-27</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="news_link clear">
+                        <img src="images/news04.png" alt="" class="news_pic"/>
+                        <div class="news_right">
+                            <p class="news_title">湘西民族文化园湘西民族文化园</p>
+                            <p class="news_txt">苗族民间的传统节日较多，有苗年、四月八、龙舟节、吃新节、赶秋节等，其中以过苗年最为隆......</p>
+                            <p class="news_date">2018-11-27</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end 景区资讯 -->
+        <!-- 底部版权信息 -->
+        <p class="footer">Copyright © 2018 湘西民族文化园版权所有 All Rights Reserved</p>
+        <!-- end 底部版权信息 -->
+    </div>
+    <!-- end content -->
+
+    <!-- 底部菜单 -->
+    <ul class="nav_bar clear">
+        <li>
+            <a href="#" class="active_a">
+                <p class="nav_pic"><i class="iconfont">&#xe61c;</i></p>
+                <p class="nav_txt">首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <p class="nav_pic"><i class="iconfont">&#xe6b8;</i></p>
+                <p class="nav_txt">博物馆与非遗馆</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <p class="nav_pic"><i class="iconfont">&#xe604;</i></p>
+                <p class="nav_txt">园区景点</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <p class="nav_pic"><i class="iconfont">&#xe64a;</i></p>
+                <p class="nav_txt">联系我们</p>
+            </a>
+        </li>
+    </ul>
+    <script src="js/amazeui.min.js"></script>
+</body>
+</html>
